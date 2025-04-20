@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mi Dulcería</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>Mi Dulcería</h1>
+        <nav>
+            <ul>
+                <li><a href="#inicio">Inicio</a></li>
+                <li><a href="#productos">Productos</a></li>
+                <li><a href="#contacto">Contacto</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section id="agregar-producto" class="container">
+            <h2>Agregar Nuevo Producto</h2>
+            <form id="producto-form">
+                <input type="text" id="nombre" placeholder="Nombre del dulce" required>
+                <input type="number" id="precio" placeholder="Precio" required>
+                <textarea id="descripcion" placeholder="Descripción" required></textarea>
+                <input type="file" id="imagen" accept="image/*" required>
+                <button type="submit">Agregar Producto</button>
+            </form>
+        </section>
+
+        <section id="productos" class="container">
+            <h2>Nuestros Dulces</h2>
+            <div id="productos-grid" class="productos-grid">
+                <!-- Los productos se agregarán aquí dinámicamente -->
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 Mi Dulcería. Todos los derechos reservados.</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
